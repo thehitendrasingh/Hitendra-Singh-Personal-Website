@@ -42,25 +42,45 @@ const Contact: React.FC = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus('loading');
+  e.preventDefault();
+  setStatus('loading');
 
-    // MOCK API CALL for Static Demo
-    // In a real Next.js env, this would be: await fetch('/api/submitContact', ...)
-    try {
-      await new Promise(resolve => setTimeout(resolve, 1500)); // Simulate network delay
-      
-      // Simulate success
-      setStatus('success');
-      setFormData({ name: '', email: '', subject: 'General Inquiry', message: '' });
-      
-      // Reset success message after 5 seconds
-      setTimeout(() => setStatus('idle'), 5000);
-    } catch (error) {
-      console.error(error);
-      setStatus('error');
+  try {
+    const response = await fetch('/api/submitContact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      }),
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      console.error('API Error:', data);
+      throw new Error(data.error || 'Submission failed');
     }
-  };
+
+    setStatus('success');
+    setFormData({
+      name: '',
+      email: '',
+      subject: 'General Inquiry',
+      message: '',
+    });
+
+    setTimeout(() => setStatus('idle'), 5000);
+  } catch (error) {
+    console.error('Submit failed:', error);
+    setStatus('error');
+  }
+};
+
 
   return (
     <div className="pb-20 pt-10 px-4">

@@ -108,8 +108,7 @@ const About: React.FC = () => {
     { name: 'Stride Ahead', domain: 'strideahead.io' },
     { name: 'VDB', domain: 'vdbapp.com' },
     { name: 'Clovia', domain: 'clovia.com' },
-    { name: 'Truworth', domain: 'truworthwellness.com' },
-    { name: 'ImpactGuru', domain: 'impactguru.com' },
+    { name: 'Digital Futur', domain: 'thedigitalfutur.com' },
   ];
 
   return (

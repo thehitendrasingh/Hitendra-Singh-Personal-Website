@@ -39,8 +39,8 @@ const Home: React.FC = () => {
     { name: 'Stride Ahead', domain: 'strideahead.io' },
     { name: 'Virtual Diamond Boutique', domain: 'vdbapp.com' },
     { name: 'Clovia', domain: 'clovia.com' },
-    { name: 'Truworth Wellness', domain: 'truworthwellness.com' },
-    { name: 'ImpactGuru', domain: 'impactguru.com' },
+    { name: 'Digital Futur', domain: 'thedigitalfutur.com' },
+    
   ];
 
   const missions = [
@@ -91,7 +91,7 @@ const Home: React.FC = () => {
               </div>
               <div className="px-4 py-1.5 rounded-full bg-white/80 backdrop-blur-md border border-accent-sky/30 text-neutral-800 text-xs font-bold shadow-sm flex items-center gap-2">
                 <Shield size={14} className="text-accent-sky" />
-                <span className="tracking-wide uppercase">Lvl 6 PM</span>
+                <span className="tracking-wide uppercase">Role: PM</span>
               </div>
               <div className="px-4 py-1.5 rounded-full bg-white/80 backdrop-blur-md border border-accent-violet/30 text-neutral-800 text-xs font-bold shadow-sm flex items-center gap-2">
                 <Code size={14} className="text-accent-violet" />
@@ -114,9 +114,9 @@ const Home: React.FC = () => {
             {/* XP Progress Bar */}
             <div className="max-w-sm mx-auto md:mx-0 relative group" ref={xpBarRef}>
               <div className="flex justify-between text-[10px] font-bold text-neutral-400 uppercase tracking-widest mb-2">
-                <span>Lvl 6</span>
-                <span className="text-neutral-500 font-medium">Next Level</span>
-                <span className="text-accent-sky group-hover:text-accent-violet transition-colors">Lvl 7</span>
+                <span>XP: 6 Years</span>
+                <span className="text-neutral-500 font-medium">Next Milestone</span>
+                <span className="text-accent-sky group-hover:text-accent-violet transition-colors">XP: 7 Years</span>
               </div>
               <div className="h-2.5 bg-neutral-200 rounded-full overflow-hidden shadow-inner border border-neutral-100">
                 <div 
