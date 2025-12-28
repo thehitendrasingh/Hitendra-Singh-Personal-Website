@@ -45,7 +45,7 @@ const Mentorship: React.FC = () => {
       role: 'UI/UX Designer at Astonous',
       text: "Hitendra provided clear guidance and valuable insights that truly made a huge difference in my journey. I appreciate his support and highly recommend him to anyone seeking clarity on becoming a PM!",
       source: 'Topmate',
-      image: '/Darshan.jpg'
+      image: '/Darshan.webp'
     },
    
     {
@@ -53,21 +53,21 @@ const Mentorship: React.FC = () => {
       role: 'Senior Product Manager at Mitratech',
       text: "I have done a couple of mock interview sessions with him and he shared a lot of useful feedback with me which in turn became helpful in my actual interview. Thanks Hitendra",
       source: 'Topmate',
-      image: '/Priti.jpg'
+      image: '/Priti.webp'
     },
     {
       name: 'Nikkhil Amresh',
       role: 'Life Underwriting Consultant at Ethos',
       text: "The mentorship was instrumental in clarifying my career aspirations. His guidance helped me gain positive belief in my decision to take up product management",
       source: 'Topmate',
-      image: '/Nikkhil.jpg'
+      image: '/Nikkhil.webp'
     },
     {
       name: 'Saurabh Thakur',
       role: 'Senior Manager at Simplilearn',
       text: "Hitendra guided me on how to remove the blockers that I am facing currently. He addresses the problems and gives real solutions to them. Looking forward to talking to him more frequently",
       source: 'Topmate',
-      image: 'Saurabh.jpg'
+      image: '/Saurabh.webp'
     }
     
   ];

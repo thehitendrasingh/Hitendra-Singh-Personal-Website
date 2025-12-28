@@ -19,7 +19,7 @@ const recommendations: Recommendation[] = [
     name: "Bitan Purkayastha",
     role: "Founder & CEO",
     company: "Outreach Pro",
-    image: "/Bitan.jpg",
+    image: "/Bitan.webp",
     text: "Hitendra is a remarkable product advisor and mentor with a deep understanding of achieving product-market fit and driving business success. His ability to guide teams and individuals with actionable insights and strategic advice is truly impressive."
   },
   {
@@ -27,7 +27,7 @@ const recommendations: Recommendation[] = [
     name: "Yadnyesh Dubla",
     role: "Technical Lead",
     company: "Encora",
-    image: "/Yadnyesh.jpg",
+    image: "/Yadnyesh.webp",
     text: "Hitendra excelled at leading the team, managing timelines, and ensuring smooth communication across all stakeholders. Hitendra’s leadership and problem-solving skills were key to the project's success. I highly recommend him for any future roles."
   },
   {
@@ -35,7 +35,7 @@ const recommendations: Recommendation[] = [
     name: "Siddhant Thakur",
     role: "Founder",
     company: "WearWoke",
-    image: "/Siddhant.jpg",
+    image: "/Siddhant.webp",
     text: "Hitendra is one of the most insightful professionals I’ve come to know over my professional life. His thought process is highly structured and dynamic. A great problem solver who will bring high value to any team and any discussion. "
   }
 ];

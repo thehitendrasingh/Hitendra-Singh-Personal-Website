@@ -1,68 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hitendra Singh: Product Manager building user-centric digital products</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Hitendra Singh</title>
+  <meta
+    name="description"
+    content="Hitendra Singh is a Product Manager and product strategist building user-centric digital products. Explore case studies, portfolio, mentorship, and collaborations."
+  />
+  <meta name="author" content="Hitendra Singh" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.thehitendrasingh.com/" />
+
+  <!-- Open Graph (LinkedIn / WhatsApp / Facebook) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Hitendra Singh – Product Manager & Product Strategist" />
+  <meta
+    property="og:description"
+    content="Building impactful digital products at the intersection of UX, business & AI. View my portfolio, case studies, and mentorship work."
+  />
+  <meta property="og:url" content="https://www.thehitendrasingh.com/" />
+  <meta property="og:image" content="https://www.thehitendrasingh.com/og.png" />
+  <meta property="og:site_name" content="Hitendra Singh" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hitendra Singh – Product Manager" />
+  <meta
+    name="twitter:description"
+    content="Product Manager building user-first, scalable digital products. Explore my work, case studies & collaborations."
+  />
+  <meta name="twitter:image" content="https://www.thehitendrasingh.com/og.png" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+  <!-- PWA -->
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            neutral: {
+              50: '#fafafa',
+              900: '#171717',
             },
-            colors: {
-              neutral: {
-                50: '#fafafa',
-                900: '#171717',
-              },
-              accent: {
-                sky: '#0ea5e9',
-                violet: '#8b5cf6',
-                emerald: '#10b981',
-              }
+            accent: {
+              sky: '#0ea5e9',
+              violet: '#8b5cf6',
+              emerald: '#10b981',
             },
-            boxShadow: {
-              'neon-blue': '0 0 12px rgba(50, 100, 255, 0.5)',
-              'neon-purple': '0 0 12px rgba(139, 92, 246, 0.5)',
-              'neon-teal': '0 0 12px rgba(16, 185, 129, 0.5)',
-            }
-          }
-        }
-      }
-    </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-      /* Smooth scrolling */
-      html {
-        scroll-behavior: smooth;
-      }
-      body {
-        background-color: #fafafa;
-        color: #171717;
-      }
-    </style>
+          },
+          boxShadow: {
+            'neon-blue': '0 0 12px rgba(50, 100, 255, 0.5)',
+            'neon-purple': '0 0 12px rgba(139, 92, 246, 0.5)',
+            'neon-teal': '0 0 12px rgba(16, 185, 129, 0.5)',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #fafafa;
+      color: #171717;
+    }
+  </style>
+
+  <!-- Import maps -->
   <script type="importmap">
-{
-  "imports": {
-    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react-dom": "https://esm.sh/react-dom@^19.2.3",
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
-    "react-youtube": "https://esm.sh/react-youtube@10.1.0",
-    "next": "https://esm.sh/next@^16.1.1",
-    "@notionhq/client": "https://esm.sh/@notionhq/client@^5.6.0",
-    "path": "https://esm.sh/path@^0.12.7",
-    "vite": "https://esm.sh/vite@^7.3.0",
-    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
+    {
+      "imports": {
+        "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0",
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "react-dom": "https://esm.sh/react-dom@^19.2.3",
+        "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+        "react-youtube": "https://esm.sh/react-youtube@10.1.0",
+        "@notionhq/client": "https://esm.sh/@notionhq/client@^5.6.0",
+        "vite": "https://esm.sh/vite@^7.3.0",
+        "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="/index.css" />
 </head>
+
   <body>
     <div id="root"></div>
   <script type="module" src="/index.tsx"></script>

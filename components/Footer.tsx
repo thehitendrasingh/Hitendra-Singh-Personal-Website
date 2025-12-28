@@ -168,7 +168,7 @@ const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-neutral-900 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-sm text-neutral-600 flex items-center gap-1">
-            © {currentYear} Hitendra Singh. Crafted with <Heart size={12} className="text-red-600 fill-red-600" /> & Code.
+            © {currentYear} Hitendra Singh. Made with <Heart size={12} className="text-red-600 fill-red-600" /> in India.
           </div>
           
           <button 

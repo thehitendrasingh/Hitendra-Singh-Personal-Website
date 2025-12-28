@@ -53,7 +53,7 @@ const Portfolio: React.FC = () => {
       link: 'https://docs.google.com/presentation/d/1s_cs-3nfxHFUgx_zBXHN9KnCtGGM04H2fP_1VANroQ8/edit?usp=sharing',
       linkType: 'Google Slides',
       color: 'teal',
-      image: '/Agrichain.png', //  Agrichain cover
+      image: '/Agrichain.webp', //  Agrichain cover
       skills: ['Market Research', 'Stakeholder Mgmt', 'PRD Writing', 'Go-To-Market']
     },
     {
@@ -65,7 +65,7 @@ const Portfolio: React.FC = () => {
       link: 'https://docs.google.com/presentation/d/18mw3FkaHIyNYIh5cjb5fR5cNQ4nLki6u/edit?usp=sharing&ouid=100712192534021345661&rtpof=true&sd=true',
       linkType: 'Google Slides',
       color: 'purple',
-      image: '/Redcliffe Labs.png', // Local medical/lab tech cover
+      image: '/Redcliffe Labs.webp', // Local medical/lab tech cover
       skills: ['User Flows', 'Data Analysis', 'Operational Efficiency']
     },
     {
@@ -77,7 +77,7 @@ const Portfolio: React.FC = () => {
       link: 'https://docs.google.com/presentation/d/1p9nbgi-pB21evW3bkr772B0yBd_gQ8AuODO4Fg3vFWk/edit?usp=sharing', 
       linkType: 'Google Slides',
       color: 'blue',
-      image: '/Metadrob.png', // Local virtual showroom / 3D tech cover
+      image: '/Metadrob.webp', // Local virtual showroom / 3D tech cover
       skills: ['PLG Strategy', 'User Activation', 'Funnel Analysis', 'GTM']
     },
     {
@@ -89,7 +89,7 @@ const Portfolio: React.FC = () => {
       link: 'https://docs.google.com/document/d/1WpE8F5siApGQGlJkt6WahQAvMhr2fxIJ/edit?usp=sharing&ouid=100712192534021345661&rtpof=true&sd=true',
       linkType: 'Google Doc',
       color: 'blue',
-      image: '/Hawaikana.png', // Local cloud kitchen / food delivery cover
+      image: '/Hawaikana.webp', // Local cloud kitchen / food delivery cover
       skills: ['Requirement Gathering', 'Prioritization (RICE)', 'Wireframing']
     },
     
@@ -103,7 +103,7 @@ const Portfolio: React.FC = () => {
       link: 'https://docs.google.com/document/d/1SLV9oOON-Aif76IqVbZ7G2vdAVhOXsDS9fE65NvegL0/edit?usp=sharing',
       linkType: 'Google Doc',
       color: 'purple',
-      image: '/VDB.png', // Local VDB / luxury imagery
+      image: '/VDB.webp', // Local VDB / luxury imagery
       skills: ['Heuristic Analysis', 'UX Writing', 'Information Architecture']
     },
     {
@@ -115,7 +115,7 @@ const Portfolio: React.FC = () => {
       link: 'https://sites.google.com/d/1qP5ICVbXDtbNgD9UZW7eUlwh9etPKazs/p/1E87v6-X_DjkXk4WnG_nuxfY5dI6HlceU/edit?pli=1&authuser=2',
       linkType: 'Google Sites',
       color: 'blue',
-      image: '/SleepBetter.png', // Local SleepBetter cover
+      image: '/SleepBetter.webp', // Local SleepBetter cover
       skills: ['User Research', 'Visual Design', 'Interaction Design']
     },
     {
@@ -127,7 +127,7 @@ const Portfolio: React.FC = () => {
       link: 'https://sites.google.com/d/1fLNUqjtmMMV_bZRsbiZk4tjEQHXfa4Iy/p/17s8iHCX3d82X5o7ie2QRxhH4KoMVNxws/edit?pli=1&authuser=2',
       linkType: 'Google Sites',
       color: 'teal',
-      image: '/Shoekart.png', // Local Shoekart cover
+      image: '/Shoekart.webp', // Local Shoekart cover
       skills: ['E-com Patterns', 'Cart Optimization', 'Visual Design']
     }
   ];

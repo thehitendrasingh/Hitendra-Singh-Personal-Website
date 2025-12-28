@@ -49,21 +49,21 @@ const Home: React.FC = () => {
       desc: 'Product-led growth strategy increasing user activation for a 3D showroom SaaS.', 
       color: 'blue', 
       tags: ['SaaS', 'Growth'],
-      image: '/Metadrob.png',
+      image: '/Metadrob.webp',
     },
     { 
       title: 'AgriChain PM', 
       desc: 'End-to-end supply chain roadmap for 10k+ users.', 
       color: 'teal', 
       tags: ['Strategy', 'B2B'],
-      image: '/Agrichain.png', //  Agrichain cover
+      image: '/Agrichain.webp', //  Agrichain cover
     },
     { 
       title: 'VDB UX Revamp', 
       desc: 'B2B luxury marketplace experience overhaul.', 
       color: 'purple', 
       tags: ['UX', 'E-com'],
-      image: '/VDB.png',
+      image: '/VDB.webp',
     }
   ];
 

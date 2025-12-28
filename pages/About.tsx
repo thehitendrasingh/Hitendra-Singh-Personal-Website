@@ -118,7 +118,7 @@ const About: React.FC = () => {
       <section className="flex flex-col-reverse md:flex-row items-center gap-12 animate-fade-in-up">
         <div className="flex-1 space-y-6 text-center md:text-left">
           <div className="inline-block px-3 py-1 bg-accent-sky/10 text-accent-sky rounded-full text-xs font-bold tracking-wider uppercase mb-2">
-            Level 6 Product Manager
+            Product Manager: 6+ Years
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900 leading-tight">
             Hi, I'm Hitendra — <br />
