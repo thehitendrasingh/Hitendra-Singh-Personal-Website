@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // Import Link for internal routing
 import SectionHeader from '../components/SectionHeader';
+import useSEO from '../hooks/useSEO';
 import GlowCard from '../components/GlowCard';
 import { 
   Award, Heart, Zap, Briefcase, Code, Terminal, 
@@ -88,6 +89,12 @@ const About: React.FC = () => {
       xp: ['CS Fundamentals +10', 'Engineering +5']
     }
   ];
+useSEO({
+  title: 'About | Hitendra Singh',
+  description:
+    'Learn more about Hitendra Singh — Product Manager with 6+ years of experience across D2C, HealthTech, SaaS, and AI-driven products.',
+  canonical: 'https://thehitendrasingh.com/about',
+});
 
   // Logic to slice data for "Show Less" view (Show top 4 items by default)
   const visibleTimeline = showAllExperience ? timelineData : timelineData.slice(0, 4);
