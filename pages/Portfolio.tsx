@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SectionHeader from '../components/SectionHeader';
 import GlowCard from '../components/GlowCard';
-import useSEO from '../hooks/useSEO';
 import { 
   Leaf, ExternalLink, X, ChevronRight, Layout, 
   Search, Target, Zap, BarChart3, RefreshCw, 
@@ -27,14 +26,6 @@ interface CaseStudy {
 const Portfolio: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState('All');
   const [selectedStudy, setSelectedStudy] = useState<CaseStudy | null>(null);
-
-  useSEO({
-  title: 'Portfolio | Hitendra Singh',
-  description:
-    'A curated portfolio of product work, case studies, and execution highlights by Hitendra Singh.',
-  canonical: 'https://thehitendrasingh.com/portfolio',
-});
-
 
   // Prevent background scrolling when modal is open
   useEffect(() => {

@@ -1,7 +1,6 @@
 import React from 'react';
 import SectionHeader from '../components/SectionHeader';
 import GlowCard from '../components/GlowCard';
-import useSEO from '../hooks/useSEO';
 import { 
   Users, Star, MessageCircle, Award, CheckCircle, 
   MapPin, Globe, BookOpen, 
@@ -37,12 +36,6 @@ const Mentorship: React.FC = () => {
     { icon: Users, label: 'Transition to PM' },
     { icon: Star, label: 'Personal Branding' },
   ];
-useSEO({
-  title: 'Mentorship | Hitendra Singh',
-  description:
-    'Product management mentorship by Hitendra Singh, focused on real-world PM skills, career clarity, and execution.',
-  canonical: 'https://thehitendrasingh.com/mentorship',
-});
 
   // --- Data: Testimonials (All from Topmate with Profile Pics) ---
   const testimonials = [
