@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import useSEO from '../hooks/useSEO';
 import { 
   ArrowRight, PlayCircle, BarChart2, Users, Layers, 
   Briefcase, Award, Zap, Gamepad2, Heart, Shield, 
@@ -66,6 +67,59 @@ const Home: React.FC = () => {
       image: '/VDB.webp',
     }
   ];
+useSEO({
+  title: 'Hitendra Singh | Product Manager & Mentor',
+  description:
+    'Product leader with 6+ years of experience driving D2C, HealthTech, EdTech and AI-powered products from idea to scale.',
+  canonical: 'https://thehitendrasingh.com/',
+});
+
+useEffect(() => {
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.innerHTML = JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://thehitendrasingh.com/#person",
+        "name": "Hitendra Singh",
+        "url": "https://thehitendrasingh.com/",
+        "jobTitle": "Product Manager | Mentor",
+        "description":
+          "Product Manager with 6+ years of experience building D2C, HealthTech, EdTech and AI-powered products.",
+        "sameAs": [
+          "https://www.linkedin.com/in/thehitendra",
+          "https://github.com/thehitendrasingh"
+        ],
+        "knowsAbout": [
+          "Product Management",
+          "Product Strategy",
+          "D2C Products",
+          "HealthTech",
+          "AI Products",
+          "UX Strategy",
+          "Mentorship"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://thehitendrasingh.com/#website",
+        "url": "https://thehitendrasingh.com/",
+        "name": "Hitendra Singh – Product Manager Portfolio",
+        "publisher": {
+          "@id": "https://thehitendrasingh.com/#person"
+        },
+        "inLanguage": "en"
+      }
+    ]
+  });
+
+  document.head.appendChild(script);
+  return () => {
+    document.head.removeChild(script);
+  };
+}, []);
 
   return (
     <div className="relative overflow-hidden pb-32">

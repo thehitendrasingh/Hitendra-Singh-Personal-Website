@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import SectionHeader from '../components/SectionHeader';
 import GlowCard from '../components/GlowCard';
+import useSEO from '../hooks/useSEO';
 import { 
   ExternalLink, Github, Bot, Heart, Layout, Code, 
   Cpu, Rocket, Search, MessageSquare, Repeat, Zap, 
@@ -11,6 +12,42 @@ import { socialLinks } from '../data/socialLinks';
 
 const Projects: React.FC = () => {
   const location = useLocation();
+
+  useSEO({
+  title: 'Projects | Hitendra Singh',
+  description:
+    'A collection of self-driven product experiments, prototypes, and AI-powered builds by Hitendra Singh.',
+  canonical: 'https://thehitendrasingh.com/projects',
+});
+
+useEffect(() => {
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.innerHTML = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "@id": "https://thehitendrasingh.com/projects#work",
+    "name": "Personal Product Projects by Hitendra Singh",
+    "url": "https://thehitendrasingh.com/projects",
+    "creator": {
+      "@id": "https://thehitendrasingh.com/#person"
+    },
+    "about": [
+      "AI Products",
+      "Product Prototyping",
+      "Mental Wellness",
+      "UX Design",
+      "MVP Development"
+    ],
+    "inLanguage": "en"
+  });
+
+  document.head.appendChild(script);
+  return () => {
+    document.head.removeChild(script);
+  };
+}, []);
+
 
   // Handle scroll to section based on hash
   useEffect(() => {

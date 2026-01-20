@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import useSEO from '../hooks/useSEO';
 import SectionHeader from '../components/SectionHeader';
 import { 
   Send, Copy, Linkedin, MapPin, Mail, 
@@ -61,6 +62,8 @@ const Contact: React.FC = () => {
 
     const data = await response.json();
 
+ 
+
     if (!response.ok) {
       console.error('API Error:', data);
       throw new Error(data.error || 'Submission failed');
@@ -81,7 +84,12 @@ const Contact: React.FC = () => {
   }
 };
 
-
+   useSEO({
+  title: 'Contact | Hitendra Singh',
+  description:
+    'Get in touch with Hitendra Singh for product opportunities, mentorship, or collaborations.',
+  canonical: 'https://thehitendrasingh.com/contact',
+});
   return (
     <div className="pb-20 pt-10 px-4">
       
